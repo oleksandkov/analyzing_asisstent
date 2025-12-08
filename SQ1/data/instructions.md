@@ -1,0 +1,1 @@
+YOu will need to collect all data about the cafes in the Edmnoton city in Canada. You need to take a list of all cafes (name of cafes) in the city, and hte number of shops of each brand.
