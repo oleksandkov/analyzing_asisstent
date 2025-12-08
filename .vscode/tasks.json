@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "create-sqlite-from-csv",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"$dbPath = 'SQ1/data/edmonton_cafes.sqlite'; $csvPath = 'SQ1/data/the list of cafes in the Edmonto, Alberta.csv'; if (Test-Path $dbPath) { Remove-Item $dbPath }; if (-not (Get-Command sqlite3 -ErrorAction SilentlyContinue)) { Write-Error 'sqlite3 CLI not found. Please install SQLite and ensure sqlite3 is on PATH.'; exit 1 }; $schema = 'CREATE TABLE cafes (BrandName TEXT, Type TEXT, NumberOfLocations INTEGER, Y2025 INTEGER, Y2024 INTEGER, Y2023 INTEGER, Y2022 INTEGER, Y2021 INTEGER, Y2020 INTEGER, Y2019 INTEGER, Y2018 INTEGER, Y2017 INTEGER, Y2016 INTEGER, Y2015 INTEGER);'; sqlite3 \"$dbPath\" \"$schema\"; $records = Import-Csv -Path $csvPath; foreach ($r in $records) { $values = @($r.'Brand Name', $r.'Type', [int]$r.'Number of Locations', [int]$r.'2025', [int]$r.'2024', [int]$r.'2023', [int]$r.'2022', [int]$r.'2021', [int]$r.'2020', [int]$r.'2019', [int]$r.'2018', [int]$r.'2017', [int]$r.'2016', [int]$r.'2015') | ForEach-Object { ($_ -replace '''''','''''''') }; $valueList = $values | ForEach-Object { '''''' + $_ + '''''' } -join ','; $insert = 'INSERT INTO cafes VALUES(' + $valueList + ');'; sqlite3 \"$dbPath\" $insert }"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "create-sqlite-from-csv-updated",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"$dbPath = 'SQ1/data/edmonton_cafes.sqlite'; $csvPath = 'SQ1/data/the list of cafes in the Edmonto, Alberta.csv'; if (Test-Path $dbPath) { Remove-Item $dbPath }; if (-not (Get-Command sqlite3 -ErrorAction SilentlyContinue)) { Write-Error 'sqlite3 CLI not found. Please install SQLite and ensure sqlite3 is on PATH.'; exit 1 }; $schema = 'CREATE TABLE cafes (BrandName TEXT, Type TEXT, NumberOfLocations INTEGER);'; sqlite3 \"$dbPath\" \"$schema\"; $records = Import-Csv -Path $csvPath; foreach ($r in $records) { $brandName = $r.'Brand Name' -replace '\"', '\"\"'; $type = $r.'Type' -replace '\"', '\"\"'; $numLocations = [int]$r.'Number of Locations'; $insert = \"INSERT INTO cafes VALUES('$brandName', '$type', $numLocations);\"; sqlite3 \"$dbPath\" $insert }; Write-Output 'Database created successfully at ' + $dbPath"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
