@@ -1,58 +1,58 @@
-﻿"Brand Name","Type","Number of Locations","Population 2025"
-"ACE Coffee Roasters","Local Roaster/Chain",3,1217133
-"Anvil Coffee House","Independent",1,1217133
-"Awake Coffee House","Independent",1,1217133
-"Bar Oro Caffe and Roastery","Independent",1,1217133
-"Bean Around The World","Chain",1,1217133
-"Block 1912 Cafe","Independent",1,1217133
-"Boxcar Coffee Shop","Independent",1,1217133
-"Brew+Bloom","Independent",1,1217133
-"Brio Bakery","Independent",1,1217133
-"Brown Butter Cafe","Independent",1,1217133
-"Cafe Bicyclette","Independent",1,1217133
-"Cafe Sol","Independent",2,1217133
-"Cat Cafe on Whyte","Independent",1,1217133
-"Coffee Bureau","Independent",2,1217133
-"Common Ground","Independent",1,1217133
-"Credo Coffee","Local Chain",2,1217133
-"Crum Coffee Bar","Independent",1,1217133
-"Dirtbag Cafe","Independent",1,1217133
-"District Cafe & Bakery","Independent",1,1217133
-"Duchess Bake Shop","Bakery/Cafe",1,1217133
-"Farrow","Local Chain",4,1217133
-"Felice Cafe","Independent",1,1217133
-"Good Earth Coffeehouse","Chain",1,1217133
-"Iconoclast Coffee Roasters","Local Roaster",2,1217133
-"Kaffa Roaster and Studio","Local Roaster",1,1217133
-"Krew Cafe","Independent",1,1217133
-"La Bosco Bakery & Cafe","Independent",1,1217133
-"Leonardo's","Independent",1,1217133
-"Liberta Coffee Lab","Independent",1,1217133
-"Little BonBon","Independent",1,1217133
-"Little Brick","Independent",1,1217133
-"Lui-Chi's Coffee","Independent",2,1217133
-"Mokha Coffee House","Independent",2,1217133
-"Monacci Coffeehouse","Independent",1,1217133
-"Reinette Cafe & Patisserie","Bakery/Cafe",1,1217133
-"Remedy Cafe","Local Chain",7,1217133
-"Respire Coffeehouse","Independent",1,1217133
-"Roam Cafe","Independent",1,1217133
-"Roasti Coffee Company","Local Roaster",1,1217133
-"Rogue Wave Coffee","Local Roaster",1,1217133
-"Second Cup","Chain",20,1217133
-"Sober Cat Cafe","Independent",2,1217133
-"Square 1 Coffee","Local Chain",5,1217133
-"Starbucks","Chain",66,1217133
-"Stopgap Coffee","Independent",1,1217133
-"Strom Coffee","Independent",1,1217133
-"Sugar Bowl","Independent",1,1217133
-"Sweet Castle Bakery","Bakery/Cafe",1,1217133
-"Tea & Coffee Company","Local Roaster",2,1217133
-"The Art of Cake","Bakery/Cafe",1,1217133
-"The Colombian Coffee Bar & Roastery","Local Roaster/Chain",3,1217133
-"The Glass Cafe","Independent",1,1217133
-"The Wall Coffee Roasters","Local Roaster",1,1217133
-"The Woodrack Cafe","Independent",1,1217133
-"Tim Hortons","Chain",111,1217133
-"Transcend Coffee","Local Roaster/Chain",2,1217133
-"Yelo'd","Independent",1,1217133
+﻿"Brand Name","Type","Number of Locations","Population 2025","Mature Area","North Sector","Northeast Sector","Northwest Sector","Southeast Sector","Southwest Sector","West Sector"
+"ACE Coffee Roasters","Local Roaster/Chain",3,1217133,3,0,0,0,0,0,0
+"Anvil Coffee House","Independent",1,1217133,1,0,0,0,0,0,0
+"Awake Coffee House","Independent",1,1217133,0,0,0,0,0,0,1
+"Bar Oro Caffe and Roastery","Independent",1,1217133,1,0,0,0,0,0,0
+"Bean Around The World","Chain",1,1217133,1,0,0,0,0,0,0
+"Block 1912 Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"Boxcar Coffee Shop","Independent",1,1217133,0,0,0,0,0,0,1
+"Brew+Bloom","Independent",1,1217133,1,0,0,0,0,0,0
+"Brio Bakery","Independent",1,1217133,0,0,0,0,0,0,1
+"Brown Butter Cafe","Independent",1,1217133,0,0,0,0,0,1,0
+"Cafe Bicyclette","Independent",1,1217133,0,0,1,0,0,0,0
+"Cafe Sol","Independent",2,1217133,2,0,0,0,0,0,0
+"Cat Cafe on Whyte","Independent",1,1217133,1,0,0,0,0,0,0
+"Coffee Bureau","Independent",2,1217133,2,0,0,0,0,0,0
+"Common Ground","Independent",1,1217133,0,0,0,0,0,1,0
+"Credo Coffee","Local Chain",2,1217133,2,0,0,0,0,0,0
+"Crum Coffee Bar","Independent",1,1217133,0,0,0,0,0,1,0
+"Dirtbag Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"District Cafe & Bakery","Independent",1,1217133,1,0,0,0,0,0,0
+"Duchess Bake Shop","Bakery/Cafe",2,1217133,1,1,0,0,0,0,0
+"Farrow","Local Chain",4,1217133,2,0,0,0,0,0,2
+"Felice Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"Good Earth Coffeehouse","Chain",1,1217133,0,0,0,0,0,0,1
+"Iconoclast Coffee Roasters","Local Roaster",2,1217133,0,0,0,0,0,0,2
+"Kaffa Roaster and Studio","Local Roaster",1,1217133,1,0,0,0,0,0,0
+"Krew Cafe","Independent",1,1217133,0,0,0,0,0,1,0
+"La Bosco Bakery & Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"Leonardo's","Independent",1,1217133,1,0,0,0,0,0,0
+"Liberta Coffee Lab","Independent",1,1217133,1,0,0,0,0,0,0
+"Little BonBon","Independent",1,1217133,1,0,0,0,0,0,0
+"Little Brick","Independent",1,1217133,1,0,0,0,0,0,0
+"Lui-Chi's Coffee","Independent",2,1217133,2,0,0,0,0,0,0
+"Mokha Coffee House","Independent",2,1217133,1,0,0,0,0,1,0
+"Monacci Coffeehouse","Independent",1,1217133,0,0,0,0,0,1,0
+"Reinette Cafe & Patisserie","Bakery/Cafe",1,1217133,0,0,1,0,0,0,0
+"Remedy Cafe","Local Chain",7,1217133,5,0,0,0,0,0,2
+"Respire Coffeehouse","Independent",1,1217133,0,1,0,0,0,0,0
+"Roam Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"Roasti Coffee Company","Local Roaster",1,1217133,0,0,0,0,0,0,0
+"Rogue Wave Coffee","Local Roaster",1,1217133,1,0,0,0,0,0,0
+"Second Cup","Chain",20,1217133,2,0,0,0,2,0,16
+"Sober Cat Cafe","Independent",2,1217133,2,0,0,0,0,0,0
+"Square 1 Coffee","Local Chain",5,1217133,1,0,0,0,0,0,4
+"Starbucks","Chain",62,1217133,11,10,3,12,0,10,16
+"Stopgap Coffee","Independent",1,1217133,1,0,0,0,0,0,0
+"Strom Coffee","Independent",1,1217133,1,0,0,0,0,0,0
+"Sugar Bowl","Independent",1,1217133,1,0,0,0,0,0,0
+"Sweet Castle Bakery","Bakery/Cafe",1,1217133,0,0,0,0,0,1,0
+"Tea & Coffee Company","Local Roaster",2,1217133,2,0,0,0,0,0,0
+"The Art of Cake","Bakery/Cafe",1,1217133,1,0,0,0,0,0,0
+"The Colombian Coffee Bar & Roastery","Local Roaster/Chain",4,1217133,4,0,0,0,0,0,0
+"The Glass Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"The Wall Coffee Roasters","Local Roaster",1,1217133,0,0,0,0,0,0,0
+"The Woodrack Cafe","Independent",1,1217133,1,0,0,0,0,0,0
+"Tim Hortons","Chain",111,1217133,15,31,2,36,2,16,9
+"Transcend Coffee","Local Roaster/Chain",2,1217133,0,1,0,0,0,0,1
+"Yelo'd","Independent",1,1217133,1,0,0,0,0,0,0
