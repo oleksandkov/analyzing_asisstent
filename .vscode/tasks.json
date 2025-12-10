@@ -23,6 +23,17 @@
 			],
 			"isBackground": false,
 			"group": "build"
+		},
+		{
+			"label": "create-sqlite-complete",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"$dbPath = 'SQ1/data/edmonton_cafes.sqlite'; $csvPath = 'SQ1/data/the list of cafes in the Edmonto, Alberta.csv'; if (Test-Path $dbPath) { Remove-Item $dbPath }; if (-not (Get-Command sqlite3 -ErrorAction SilentlyContinue)) { Write-Error 'sqlite3 CLI not found. Please install SQLite and ensure sqlite3 is on PATH.'; exit 1 }; $schema = @'CREATE TABLE cafes (BrandName TEXT, Type TEXT, NumberOfLocations INTEGER, MatureArea INTEGER, NorthSector INTEGER, NortheastSector INTEGER, NorthwestSector INTEGER, SoutheastSector INTEGER, SouthwestSector INTEGER, WestSector INTEGER);'@; sqlite3 \"$dbPath\" $schema; $records = Import-Csv -Path $csvPath; foreach ($r in $records) { $brandName = $r.'Brand Name' -replace \"'\", \"''\"; $type = $r.'Type' -replace \"'\", \"''\"; $numLocations = [int]$r.'Number of Locations'; $mature = [int]$r.'Mature Area'; $north = [int]$r.'North Sector'; $northeast = [int]$r.'Northeast Sector'; $northwest = [int]$r.'Northwest Sector'; $southeast = [int]$r.'Southeast Sector'; $southwest = [int]$r.'Southwest Sector'; $west = [int]$r.'West Sector'; $insert = \"INSERT INTO cafes VALUES('$brandName', '$type', $numLocations, $mature, $north, $northeast, $northwest, $southeast, $southwest, $west);\"; sqlite3 \"$dbPath\" $insert }; Write-Output 'Database created successfully with all sector data at ' + $dbPath"
+			],
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }
