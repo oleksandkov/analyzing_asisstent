@@ -1,0 +1,16 @@
+.git/
+.gitignore
+# .vscode/
+
+# Python virtualenvs / caches
+.venv/
+__pycache__/
+**/__pycache__/
+
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+
+# Generated outputs
+SQ1/eda/**/prints/

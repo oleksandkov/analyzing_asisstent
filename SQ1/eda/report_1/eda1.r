@@ -137,15 +137,6 @@ p7 <- cafes %>%
     select(BrandName, NumberOfLocations, Type) %>%
     arrange(-NumberOfLocations)
 
-g7_1 <- p7 %>% 
-    filter(Type == "Independent") %>%
-    ggplot(aes(x = BrandName, y = NumberOfLocations)) +
-    geom_col() +
-    theme(axis.text.x = element_blank()) +
-    labs(title = "Number of Locations for Independent Cafe Brands",
-         x = "Brand Name",
-         y = "Number of Locations") %>%
-         print()
 
 g7_2 <- p7 %>% 
     filter(Type == "Chain") %>%
@@ -175,7 +166,6 @@ g7_4 <- p7 %>%
          print()
 
 # Save the plots
-ggsave("SQ1/eda/report_1/prints/07_independent_brands_locations.png", g7_1, width = 10, height = 6, dpi = 300)
 ggsave("SQ1/eda/report_1/prints/07_chain_brands_locations.png", g7_2, width = 10, height = 6, dpi = 300)
 ggsave("SQ1/eda/report_1/prints/07_local_chain_brands_locations.png", g7_3, width = 10, height = 6, dpi = 300)
 ggsave("SQ1/eda/report_1/prints/07_local_roaster_chain_brands_locations.png", g7_4, width = 10, height = 6, dpi = 300)
